@@ -8,6 +8,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 })
 
+//creating the reset button
+let reset = document.getElementById('reset');
+
 function handleClick(event) {
 
 
@@ -44,3 +47,7 @@ function updateSquares() {
     })
 
 }
+
+reset.addEventListener("click", function() {
+    window.location.reload();
+});  
